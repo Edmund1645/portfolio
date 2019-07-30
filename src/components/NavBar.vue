@@ -16,7 +16,7 @@ export default {
   name: 'NavBar',
   data() {
     return {
-      title: 'Edmund Ekott'
+      title: '> Edmund Ekott _'
     };
   }
 };
