@@ -1,10 +1,10 @@
 <template>
-  <section class="space-top">
-    <div class="about-me-text">
+  <section id="about-me" class="space-top">
+    <div id="about-me-text" class="about-me-text">
       <h1 class="font-thick section-header-text">About Me</h1>
       <p class="more-about-me section-text">
         I build things for the web with pixel-perfect UIs and enjoy solving problems with JavaScript.
-        I also share my knowledge about the web by writing articles. I enjoy listening to music and playing video games too.
+        I also share my knowledge about the web by writing articles and I enjoy listening to music and playing video games too.
       </p>
     </div>
     <div class="svg-image-section">
