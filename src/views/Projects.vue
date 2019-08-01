@@ -3,10 +3,12 @@
     <NavBar>
       <router-link to="/">Home</router-link>
     </NavBar>
-    <p>Here ar a list projects</p>
-    <ul>
-      <li v-for="(item, index) in projects" v-bind:key="index">{{index}} - {{item}}</li>
-    </ul>
+    <div class="container">
+      <p>Here are a list projects</p>
+      <ul>
+        <li v-for="(item, index) in projects" v-bind:key="index">{{index}} - {{item}}</li>
+      </ul>
+    </div>
   </div>
 </template>
 

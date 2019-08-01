@@ -6,18 +6,20 @@
     <div id="green-dot"></div>
     <div id="profile-text">
       <h1 class="font-thick intro-text" style="font-size:2.3rem; margin:0;">Hello 👋,</h1>
-      <p class="font-light intro-text">
+      <p class="intro-text">
         I'm
         <strong class="font-thick intro-text">Edmund Ekott</strong> a front end developer based in Abuja, Nigeria.
       </p>
-      <a
-        v-bind:href="'https://drive.google.com/open?id=1WANf7HivvqbzO1rf_v9QcALyZ8QL-qe5'"
-        target="_blank"
-        class="download-button"
-      >
-        Résumé
-        <img src="../assets/images/download-cloud.svg" alt="download icon" />
-      </a>
+      <div class="download-resume-section">
+        <a
+          v-bind:href="'https://drive.google.com/open?id=1WANf7HivvqbzO1rf_v9QcALyZ8QL-qe5'"
+          target="_blank"
+          class="download-button"
+        >
+          Résumé
+          <img src="../assets/images/download-cloud.svg" alt="download icon" />
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -42,8 +44,6 @@ section {
   right: 0;
   position: absolute;
   z-index: -9;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAK0lEQVQoU2NkgALJZ3f+P5dSYYTxkWmwIEgBTBCbQrhOgiZhswLDuqGoCABjmQwKlZUmEQAAAABJRU5ErkJggg==)
-    repeat;
   margin-bottom: 15px;
 }
 #profile-img {
@@ -76,14 +76,25 @@ img[alt='profile-photo'] {
   font-size: 1rem;
   box-shadow: 0px 9px 20px 0px rgba(52, 52, 52, 0.27);
   text-decoration: none;
-  transition: translate 0.3s;
+  transition: box-shadow 0.2s;
+  transition-delay: 0.01;
 }
-a.download-button:hover {
-  transform: translateY(25px);
-}
+
 .download-button img {
   margin-left: 10px;
   vertical-align: middle;
+}
+.download-resume-section {
+  width: fit-content;
+  margin-left: auto;
+  transition: transform 0.2s;
+  transition-delay: 0.01s;
+}
+.download-resume-section:hover {
+  transform: translateY(-3px);
+}
+.download-resume-section:hover a.download-button {
+  box-shadow: 0px 11px 22px 0px rgba(52, 52, 52, 0.27);
 }
 .intro-text {
   font-size: 2rem;
@@ -99,6 +110,11 @@ a.download-button:hover {
   img[alt='profile-photo'] {
     width: 230px;
   }
+  .download-resume-section {
+    width: fit-content;
+    margin: auto;
+    margin-top: 7px;
+  }
   #profile-text {
     margin-top: 2.3rem;
     margin-right: 5vw;
@@ -110,21 +126,28 @@ a.download-button:hover {
     font-size: 1.4rem;
   }
   #green-dot {
-    height: 600px;
+    height: 550px;
   }
 }
 /* PC */
 @media screen and (min-width: 1024px) {
-  img[alt='profile-photo'] {
-    margin-left: 50px;
-  }
   #profile-text {
     padding-left: 2rem;
-    margin-right: 9vw;
     margin-bottom: 4rem;
   }
   #green-dot {
     right: 4vw;
+  }
+}
+/* large PC */
+@media screen and (min-width: 1440px) {
+  #green-dot {
+    right: 4vw;
+  }
+}
+@media screen and (min-width: 2560px) {
+  #green-dot {
+    right: 23vw;
   }
 }
 </style>

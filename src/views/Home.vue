@@ -5,6 +5,7 @@
     </NavBar>
     <div class="container">
       <Profile></Profile>
+      <AboutMe></AboutMe>
     </div>
   </div>
 </template>
@@ -13,20 +14,15 @@
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue';
 import Profile from '@/components/Profile.vue';
+import AboutMe from '@/components/AboutMe.vue';
 export default {
   name: 'home',
   components: {
     Profile,
-    NavBar
+    NavBar,
+    AboutMe
   }
 };
 </script>
 <style scoped>
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1024px;
-    max-width: 1024px;
-    margin: auto;
-  }
-}
 </style>

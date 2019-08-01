@@ -30,9 +30,6 @@ export default {
 * {
   box-sizing: border-box;
 }
-.font-light {
-  color: var(--font-light);
-}
 .font-thick {
   color: var(--font-thick);
 }
@@ -48,6 +45,15 @@ export default {
 .space-left {
   margin-left: 5vw;
 }
+.space-top {
+  margin-top: 7rem;
+}
+.section-header-text {
+  font-size: 3rem;
+}
+.section-text {
+  font-size: 1.4rem;
+}
 html,
 body {
   height: 100vh;
@@ -57,11 +63,35 @@ body {
   background: var(--bg-white);
   padding: 0;
   margin: 0;
+  color: var(--font-light);
+}
+#green-dot {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAK0lEQVQoU2NkgALJZ3f+P5dSYYTxkWmwIEgBTBCbQrhOgiZhswLDuqGoCABjmQwKlZUmEQAAAABJRU5ErkJggg==)
+    repeat;
 }
 @media screen and (max-width: 425px) {
   /* remove this later */
   #app {
     margin-bottom: 80px;
+  }
+  .space-top {
+    margin-top: 4.5rem;
+  }
+  .section-header-text {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 0 5vw 0 5vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1300px;
+    max-width: 1300px;
+    margin: auto;
   }
 }
 </style>
