@@ -3,7 +3,7 @@
     <div id="profile-img">
       <img src="../assets/images/profile-photo.png" alt="profile-photo" />
     </div>
-    <div id="green-dot"></div>
+    <div class="green-dot"></div>
     <div id="profile-text">
       <h1 class="font-thick intro-text" style="font-size:2.3rem; margin:0;">Hello 👋,</h1>
       <p class="intro-text">
@@ -38,7 +38,7 @@ export default {
 section {
   display: flex;
 }
-#green-dot {
+.green-dot {
   height: 500px;
   width: 700px;
   right: 0;
@@ -125,7 +125,7 @@ img[alt='profile-photo'] {
   .intro-text {
     font-size: 1.4rem;
   }
-  #green-dot {
+  .green-dot {
     height: 550px;
   }
 }
@@ -135,18 +135,18 @@ img[alt='profile-photo'] {
     padding-left: 2rem;
     margin-bottom: 4rem;
   }
-  #green-dot {
+  .green-dot {
     right: 4vw;
   }
 }
 /* large PC */
 @media screen and (min-width: 1440px) {
-  #green-dot {
+  .green-dot {
     right: 4vw;
   }
 }
 @media screen and (min-width: 2560px) {
-  #green-dot {
+  .green-dot {
     right: 23vw;
   }
 }

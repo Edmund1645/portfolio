@@ -65,7 +65,7 @@ body {
   margin: 0;
   color: var(--font-light);
 }
-#green-dot {
+.green-dot {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAK0lEQVQoU2NkgALJZ3f+P5dSYYTxkWmwIEgBTBCbQrhOgiZhswLDuqGoCABjmQwKlZUmEQAAAABJRU5ErkJggg==)
     repeat;
 }

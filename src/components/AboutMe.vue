@@ -4,7 +4,8 @@
       <h1 class="font-thick section-header-text">About Me</h1>
       <p class="more-about-me section-text">
         I build things for the web with pixel-perfect UIs and enjoy solving problems with JavaScript.
-        I also share my knowledge about the web by writing articles and I enjoy listening to music and playing video games too.
+        I also share my knowledge about the web by writing articles and I enjoy listening to rap and alternative music,
+        playing video games too and on the weekends when I'm not swamped on a project I play basketball at my local court.
       </p>
     </div>
     <div class="svg-image-section">

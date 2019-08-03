@@ -12,9 +12,9 @@
       <a href="#">
         <img src="../assets/images/phone.svg" alt="phone svg" />
       </a>
-      <router-link to="/projects">
+      <a href="#" v-scroll-to="'#skills-tools-section'">
         <img src="../assets/images/briefcase.svg" alt="briefcase icon" />
-      </router-link>
+      </a>
       <a href="#" v-scroll-to="'#main-nav'">
         <img src="../assets/images/arrow-up.svg" alt="arrow pointing upwards" />
       </a>
