@@ -15,9 +15,10 @@ export default {
 
 <style>
 ::selection {
-  background-color: var(--primary-brown);
+  background-color: var(--selection-color);
 }
 :root {
+  --selection-color: #f162a5;
   --primary-brown: #e3c4a8;
   --secondary-grey: #343434;
   --font-light: #666666;
