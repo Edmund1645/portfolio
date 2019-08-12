@@ -9,11 +9,11 @@
       <a href="#" v-scroll-to="'#about-me-text'">
         <img src="../assets/images/user.svg" alt="user icon" />
       </a>
-      <a href="#">
-        <img src="../assets/images/phone.svg" alt="phone svg" />
-      </a>
       <a href="#" v-scroll-to="'#skills-tools-section'">
         <img src="../assets/images/briefcase.svg" alt="briefcase icon" />
+      </a>
+      <a href="#">
+        <img src="../assets/images/phone.svg" alt="phone svg" />
       </a>
       <a href="#" v-scroll-to="'#main-nav'">
         <img src="../assets/images/arrow-up.svg" alt="arrow pointing upwards" />
@@ -68,8 +68,40 @@ nav #title {
   nav #title {
     font-size: 1.6rem;
   }
+}
+@media screen and (min-width: 1024px) {
   #nav-mobile {
-    display: none;
+    padding: 0;
+    flex-direction: column;
+    width: fit-content;
+    height: 200px;
+    top: 60vh;
+    right: 1vw;
+    background: none;
+    box-shadow: none;
+    max-height: none;
+    justify-content: space-between;
+  }
+  #nav-mobile a {
+    padding: 0.5rem;
+    box-shadow: 0 20px 50px rgba(177, 177, 177, 0.7);
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  #nav-mobile a img {
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #nav-mobile {
+    top: 40vh;
+    right: 1vw;
+  }
+}
+@media screen and (min-width: 2560px) {
+  #nav-mobile {
+    top: 20vh;
+    right: 20vw;
   }
 }
 </style>

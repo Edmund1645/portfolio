@@ -14,20 +14,22 @@
         </ul>
       </div>
     </div>
-    <div id="work-section" class="space-top">
+    <section id="work-section" class="space-top">
       <h1 class="section-header-text">Work Experience</h1>
-      <!-- <div class="section-text" v-for="(experience,index) in workExperiences" :key="index">
-        <h2>{{ experience.title }}</h2>
-        <h3>{{ experience.role }}</h3>
-        <a :href="experience.companyUrl">{{ expereince.company }}</a>
-      </div>-->
-    </div>
+      <div v-for="(work, index) in workExperiences" :key="index">
+        <WorkExperience :work="work"></WorkExperience>
+      </div>
+    </section>
   </section>
 </template>
 
 <script>
+import WorkExperience from './WorkExperience';
 export default {
   name: 'Skills',
+  components: {
+    WorkExperience
+  },
   data() {
     return {
       skills: ['HTML', 'CSS', 'JavaScript', 'VueJs', 'Gridsome'],
@@ -39,21 +41,30 @@ export default {
           company: 'Hotels.ng',
           companyUrl: 'https://hotels.ng',
           description: 'Build and scale real life applications, working alongside other developers and UI desiners in a team to deliver a fast, pixel-perfect front-end.',
-          startMonth: 'April',
+          startMonth: {
+            word: 'April',
+            number: '04'
+          },
           startYear: 2019,
-          endMonth: 'May',
+          endMonth: {
+            word: 'May',
+            number: '05'
+          },
           endYear: 2019
         },
         {
           title: 'Front-end Developer',
-          role: 'Freelnacer',
+          role: 'Freelancer',
           company: 'Upwork.com',
           companyUrl: 'https://upwork.com',
           description: 'Work with clients remotely to offer services and deliver on time before deadlines.',
-          startMonth: 'January',
+          startMonth: {
+            word: 'January',
+            number: '01'
+          },
           startYear: 2018,
-          endMonth: undefined,
-          endYear: undefined
+          endMonth: 'Present',
+          endYear: 'Present'
         }
       ]
     };
@@ -62,6 +73,9 @@ export default {
 </script>
 
 <style scoped>
+section.space-top {
+  padding-bottom: 1rem;
+}
 div#skills-tools-section {
   display: flex;
   flex-direction: column;
@@ -90,13 +104,17 @@ div#tools-section {
 }
 div[id='tools-section'],
 div[id='skills-section'] {
-  box-shadow: 0 20px 50px rgba(112, 111, 111, 0.7);
+  box-shadow: 0 20px 50px rgba(177, 177, 177, 0.7);
 }
 @media screen and (max-width: 425px) {
   div[id='tools-section'],
   div[id='skills-section'] {
     margin: auto;
     margin-bottom: 4rem;
+  }
+  section#work-section {
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
 @media screen and (min-width: 768px) {
