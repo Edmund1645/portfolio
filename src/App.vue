@@ -66,15 +66,15 @@ body {
   margin: 0;
   color: var(--font-light);
 }
+#app {
+  margin: 0;
+}
 .green-dot {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAK0lEQVQoU2NkgALJZ3f+P5dSYYTxkWmwIEgBTBCbQrhOgiZhswLDuqGoCABjmQwKlZUmEQAAAABJRU5ErkJggg==)
     repeat;
 }
 @media screen and (max-width: 425px) {
   /* remove this later */
-  #app {
-    margin-bottom: 80px;
-  }
   .space-top {
     margin-top: 4.5rem;
   }
@@ -85,7 +85,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .container {
-    margin: 0 5vw 0 5vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
 }
 @media screen and (min-width: 1440px) {

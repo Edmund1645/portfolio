@@ -38,13 +38,13 @@ nav#main-nav {
   width: 100%;
   max-width: 100%;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.082);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 nav #title {
   font-size: 1.2rem;
   margin: 0;
   text-align: center;
-  padding: 0.7rem 0;
+  padding: 0.9rem 0;
 }
 #nav-mobile {
   padding-top: 1rem;
@@ -83,7 +83,7 @@ nav #title {
   }
   #nav-mobile a {
     padding: 0.5rem;
-    box-shadow: 0 20px 50px rgba(177, 177, 177, 0.7);
+    box-shadow: 0 20px 50px rgba(78, 78, 78, 0.329);
     background: #ffffff;
     border-radius: 50%;
   }

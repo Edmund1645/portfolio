@@ -7,9 +7,9 @@
       <em>
         <time
           :datetime="`${ work.startYear }-${ work.startMonth.number }`"
-        >{{ work.startMonth.word }} {{ work.startYear }}</time>
+        >{{ work.startMonth.word }}, {{ work.startYear }}</time>
         -
-        <time>{{ work.endMonth.word }} {{ work.endYear }}</time>
+        <time>{{ work.endMonth.word | prependComma }} {{ work.endYear }}</time>
       </em>
     </p>
     <p>{{ work.description }}</p>
@@ -24,6 +24,15 @@ export default {
   },
   props: {
     work: Object
+  },
+  filters: {
+    prependComma(month) {
+      if (month !== undefined) {
+        return `${month},`;
+      } else {
+        return '';
+      }
+    }
   }
 };
 </script>

@@ -5,8 +5,8 @@
       <Profile></Profile>
       <AboutMe></AboutMe>
       <Skills></Skills>
-      <Contact></Contact>
     </div>
+    <Contact></Contact>
   </div>
 </template>
 

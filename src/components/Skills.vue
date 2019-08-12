@@ -123,6 +123,11 @@ div[id='skills-section'] {
   background: var(--secondary-grey);
   box-shadow: 0 20px 50px rgba(177, 177, 177, 0.7);
   border-radius: 3rem;
+  transition: transform 0.2s;
+  transition-delay: 0.01s;
+}
+.projects-section a:hover {
+  transform: translateY(-3px);
 }
 @media screen and (max-width: 425px) {
   div[id='tools-section'],
