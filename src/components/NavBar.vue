@@ -2,7 +2,6 @@
   <section>
     <nav id="main-nav">
       <h1 id="title" class="font-thick font-display">{{title}}</h1>
-      <slot></slot>
     </nav>
 
     <nav id="nav-mobile">

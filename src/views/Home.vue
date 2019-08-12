@@ -1,8 +1,6 @@
 <template>
   <div>
-    <NavBar>
-      <router-link to="/projects">Projects</router-link>
-    </NavBar>
+    <NavBar></NavBar>
     <div class="container">
       <Profile></Profile>
       <AboutMe></AboutMe>

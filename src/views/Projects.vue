@@ -1,9 +1,8 @@
 <template>
   <div>
-    <NavBar>
-      <router-link to="/">Home</router-link>
-    </NavBar>
+    <NavBar></NavBar>
     <div class="container">
+      <router-link to="/">Home</router-link>
       <p>Here are a list projects</p>
       <ul>
         <li v-for="(item, index) in projects" v-bind:key="index">{{index}} - {{item}}</li>
