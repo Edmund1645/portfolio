@@ -14,6 +14,9 @@
         </ul>
       </div>
     </div>
+    <section class="projects-section">
+      <router-link to="/projects">View projects</router-link>
+    </section>
     <section id="work-section" class="space-top">
       <h1 class="section-header-text">Work Experience</h1>
       <div v-for="(work, index) in workExperiences" :key="index">
@@ -105,6 +108,21 @@ div#tools-section {
 div[id='tools-section'],
 div[id='skills-section'] {
   box-shadow: 0 20px 50px rgba(177, 177, 177, 0.7);
+}
+.projects-section {
+  margin-top: 3rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projects-section a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.8rem 0.7rem;
+  text-decoration: none;
+  background: var(--secondary-grey);
+  box-shadow: 0 20px 50px rgba(177, 177, 177, 0.7);
+  border-radius: 3rem;
 }
 @media screen and (max-width: 425px) {
   div[id='tools-section'],

@@ -12,7 +12,7 @@
       <a href="#" v-scroll-to="'#skills-tools-section'">
         <img src="../assets/images/briefcase.svg" alt="briefcase icon" />
       </a>
-      <a href="#">
+      <a href="#" v-scroll-to="'#contact-section'">
         <img src="../assets/images/phone.svg" alt="phone svg" />
       </a>
       <a href="#" v-scroll-to="'#main-nav'">

@@ -7,6 +7,7 @@
       <Profile></Profile>
       <AboutMe></AboutMe>
       <Skills></Skills>
+      <Contact></Contact>
     </div>
   </div>
 </template>
@@ -18,13 +19,15 @@ import NavBar from '@/components/NavBar.vue';
 import Profile from '@/components/Profile.vue';
 import AboutMe from '@/components/AboutMe.vue';
 import Skills from '@/components/Skills.vue';
+import Contact from '@/components/Contact.vue';
 export default {
   name: 'home',
   components: {
     Profile,
     NavBar,
     AboutMe,
-    Skills
+    Skills,
+    Contact
   },
   methods: {
     initScroll() {
