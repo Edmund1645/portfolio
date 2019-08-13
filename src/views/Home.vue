@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import locomotiveScroll from 'locomotive-scroll';
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue';
 import Profile from '@/components/Profile.vue';
@@ -27,19 +26,7 @@ export default {
     Skills,
     Contact
   },
-  methods: {
-    initScroll() {
-      this.scroll = new locomotiveScroll({
-        smooth: true,
-        smoothMobile: true
-      });
-    }
-  },
-  mounted: function() {
-    this.$nextTick(function() {
-      this.initScroll();
-    });
-  }
+  methods: {}
 };
 </script>
 <style scoped>
