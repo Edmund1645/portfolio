@@ -7,7 +7,7 @@
         <p>Kindly fill the form and I will get back to you as soon as possible</p>
         <div id="form">
           <img src="../assets/images/contact avatar.svg" alt="illustration of a person" />
-          <form method="Post" name="contact" data-netlify="true">
+          <form method="Post" name="contact" data-netlify="true" netlify>
             <div class="form-input-field">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" size="25" required />
