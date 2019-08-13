@@ -15,7 +15,10 @@
       </div>
     </div>
     <section class="projects-section">
-      <router-link to="/projects">View projects</router-link>
+      <router-link to="/projects">
+        View projects
+        <img src="../assets/images/arrow-right.svg" alt="arrow pointing right" />
+      </router-link>
     </section>
     <section id="work-section" class="space-top">
       <h1 class="section-header-text">Work Experience</h1>
@@ -118,7 +121,7 @@ div[id='skills-section'] {
 .projects-section a {
   color: #ffffff;
   display: inline-block;
-  padding: 0.8rem 0.7rem;
+  padding: 0.6rem 0.75rem;
   text-decoration: none;
   background: var(--secondary-grey);
   box-shadow: 0 20px 50px rgba(177, 177, 177, 0.7);
@@ -128,6 +131,9 @@ div[id='skills-section'] {
 }
 .projects-section a:hover {
   transform: translateY(-3px);
+}
+.projects-section img {
+  vertical-align: middle;
 }
 @media screen and (max-width: 425px) {
   div[id='tools-section'],
