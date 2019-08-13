@@ -7,14 +7,14 @@
         <p>Kindly fill the form and I will get back to you as soon as possible</p>
         <div id="form">
           <img src="../assets/images/contact avatar.svg" alt="illustration of a person" />
-          <form action name="contact" data-netlify="true">
+          <form method="Post" name="contact" data-netlify="true">
             <div class="form-input-field">
               <label for="name">Name</label>
-              <input type="text" name="name" id="name" size="25" />
+              <input type="text" name="name" id="name" size="25" required />
             </div>
             <div class="form-input-field">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" size="25" />
+              <input type="email" name="email" id="email" size="25" required />
             </div>
             <textarea
               name="message"
@@ -22,6 +22,7 @@
               cols="28"
               rows="10"
               placeholder="Type message here..."
+              required
             ></textarea>
             <button type="submit">
               Submit
