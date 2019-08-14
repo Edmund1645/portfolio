@@ -19,7 +19,7 @@
             <textarea
               name="message"
               id="message"
-              cols="28"
+              cols="30"
               rows="10"
               placeholder="Type message here..."
               required
@@ -69,6 +69,12 @@ section#contact-section {
   color: var(--primary-brown);
   margin-right: 5vw;
   margin-left: 5vw;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 .first-header-text {
   font-size: 2rem;

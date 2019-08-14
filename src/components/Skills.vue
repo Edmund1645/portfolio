@@ -145,6 +145,9 @@ div[id='skills-section'] {
     padding-right: 5%;
     padding-left: 5%;
   }
+  .projects-section {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   section {

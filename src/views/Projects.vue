@@ -3,10 +3,10 @@
     <NavBar></NavBar>
     <div class="container">
       <router-link to="/">Home</router-link>
-      <h1>These are just dummy projects</h1>
+      <!-- <h1>These are just dummy projects</h1>
       <ul>
         <li v-for="(item, index) in projects" v-bind:key="index">{{index}} - {{item}}</li>
-      </ul>
+      </ul>-->
     </div>
   </div>
 </template>
@@ -26,5 +26,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+a,
+a:active,
+a:visited {
+  color: var(--font-light);
+}
 </style>

@@ -73,6 +73,10 @@ body {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAK0lEQVQoU2NkgALJZ3f+P5dSYYTxkWmwIEgBTBCbQrhOgiZhswLDuqGoCABjmQwKlZUmEQAAAABJRU5ErkJggg==)
     repeat;
 }
+.container {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
 @media screen and (max-width: 425px) {
   /* remove this later */
   .space-top {
