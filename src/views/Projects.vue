@@ -3,7 +3,9 @@
     <NavBar></NavBar>
     <div class="container">
       <router-link to="/">Home</router-link>
-      <!-- <h1>These are just dummy projects</h1>
+      <h2>Uh oh, It seems this page hasn't been completely assembled yet..</h2>
+      <img src="../assets/images/construction.svg" alt="illustration of construction workers" />
+      <!-- 
       <ul>
         <li v-for="(item, index) in projects" v-bind:key="index">{{index}} - {{item}}</li>
       </ul>-->
@@ -31,5 +33,20 @@ a,
 a:active,
 a:visited {
   color: var(--font-light);
+}
+img {
+  margin-top: 3rem;
+  width: 250px;
+  margin: auto;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  img {
+    width: 400px;
+    margin-top: 5rem;
+  }
+  h2 {
+    text-align: center;
+  }
 }
 </style>
