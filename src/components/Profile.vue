@@ -8,7 +8,7 @@
       <h1 class="font-thick intro-text" style="font-size:2.3rem; margin:0;">Hello 👋,</h1>
       <p class="intro-text">
         I'm
-        <strong class="font-thick intro-text">Edmund Ekott</strong> a front end developer based in Abuja, Nigeria.
+        <strong class="font-thick intro-text">Edmund Ekott</strong> a front end engineer based in Uyo, Nigeria.
       </p>
       <div class="download-resume-section">
         <a
