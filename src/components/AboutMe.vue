@@ -3,9 +3,9 @@
     <div id="about-me-text" class="about-me-text">
       <h1 class="font-thick section-header-text">About Me</h1>
       <p class="more-about-me section-text">
-        I build things for the web with pixel-perfect UIs and enjoy solving problems with JavaScript.
-        I also share my knowledge about the web by writing articles and I enjoy listening to rap and alternative music,
-        playing video games too and on the weekends when I'm not swamped on a project I play basketball at my local court.
+        I build things for the web with pixel-perfect UIs and enjoy solving problems with JavaScript. I also write articles about the web on
+        <a class="blog-link" href="https://theninja.codes" target="_blank"> <em>The Ninja Blog</em> </a>, and I enjoy listening to rap and alternative music, playing video games
+        too. On the weekends when I'm not swamped on a project I play basketball at my local court.
       </p>
     </div>
     <div class="svg-image-section">
@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style scoped>
+.blog-link {
+  color: inherit;
+}
 section {
   margin-left: 5%;
   margin-right: 5%;

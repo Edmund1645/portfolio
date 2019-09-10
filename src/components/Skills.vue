@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      skills: ['HTML', 'CSS', 'JavaScript', 'VueJs', 'Gridsome'],
+      skills: ['HTML', 'CSS', 'JavaScript', 'VueJs', 'NodeJs', 'Gridsome'],
       tools: ['Git', 'Netlify', 'Heroku', 'Figma'],
       workExperiences: [
         {
@@ -46,7 +46,7 @@ export default {
           role: 'Intern',
           company: 'Hotels.ng',
           companyUrl: 'https://hotels.ng',
-          description: 'Build and scale real life applications, working alongside other developers and UI desiners in a team to deliver a fast, pixel-perfect front-end.',
+          description: 'Build and scale real life applications, working alongside other developers and UI designers in a team to deliver a fast, pixel-perfect front-end.',
           startMonth: {
             word: 'April',
             number: '04'
@@ -89,6 +89,7 @@ div#skills-tools-section {
 }
 ul {
   list-style-type: none;
+  padding: 0;
 }
 div[id='tools-section'],
 div[id='skills-section'] {
@@ -97,8 +98,9 @@ div[id='skills-section'] {
   border-radius: 3rem;
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
+  padding-left: 3.5rem;
   justify-content: center;
+  line-height: 1.2rem;
 }
 div#skills-section {
   background: var(--primary-brown);

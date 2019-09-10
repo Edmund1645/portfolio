@@ -8,14 +8,10 @@
       <h1 class="font-thick intro-text" style="font-size:2.3rem; margin:0;">Hello 👋,</h1>
       <p class="intro-text">
         I'm
-        <strong class="font-thick intro-text">Edmund Ekott</strong> a front end engineer based in Uyo, Nigeria.
+        <strong class="font-thick intro-text">Edmund Ekott</strong> a front end engineer currently living in Uyo, Nigeria.
       </p>
       <div class="download-resume-section">
-        <a
-          v-bind:href="'https://drive.google.com/open?id=1WANf7HivvqbzO1rf_v9QcALyZ8QL-qe5'"
-          target="_blank"
-          class="download-button"
-        >
+        <a v-bind:href="'https://drive.google.com/open?id=1WANf7HivvqbzO1rf_v9QcALyZ8QL-qe5'" target="_blank" class="download-button">
           Résumé
           <img src="../assets/images/download-cloud.svg" alt="download icon" />
         </a>
