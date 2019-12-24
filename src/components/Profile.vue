@@ -1,7 +1,7 @@
 <template>
   <section>
     <div id="profile-img">
-      <img src="../assets/images/profile-photo.png" alt="profile-photo" />
+      <img src="https://res.cloudinary.com/kiing/image/upload/v1575509048/IMG_8692_1_sg2vlj.jpg" alt="profile-photo" />
     </div>
     <div class="green-dot"></div>
     <div id="profile-text">
@@ -11,7 +11,7 @@
         <strong class="font-thick intro-text">Edmund Ekott</strong> a front end engineer currently living in Uyo, Nigeria.
       </p>
       <div class="download-resume-section">
-        <a v-bind:href="'https://drive.google.com/open?id=1WANf7HivvqbzO1rf_v9QcALyZ8QL-qe5'" target="_blank" class="download-button">
+        <a href="./pdf/edmund-ekott-resume.pdf" target="_blank" class="download-button">
           Résumé
           <img src="../assets/images/download-cloud.svg" alt="download icon" />
         </a>
@@ -127,6 +127,9 @@ img[alt='profile-photo'] {
 }
 /* PC */
 @media screen and (min-width: 1024px) {
+  img[alt='profile-photo'] {
+    width: 450px;
+  }
   #profile-text {
     padding-left: 2rem;
     margin-bottom: 4rem;
