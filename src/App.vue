@@ -15,7 +15,7 @@ export default {
 
 <style>
 ::selection {
-  background-color: var(--selection-color);
+  background-color: var(--primary-brown);
 }
 :root {
   --selection-color: #f162a5;
@@ -101,4 +101,3 @@ body {
   }
 }
 </style>
-

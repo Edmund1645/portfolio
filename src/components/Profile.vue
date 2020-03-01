@@ -60,7 +60,7 @@ section {
 }
 img[alt='profile-photo'] {
   width: 350px;
-  box-shadow: 22px 22px 0 var(--primary-brown);
+  box-shadow: 22px 22px 0 var(--primary-brown), 44px 44px 0 var(--secondary-grey);
 }
 .download-button {
   padding: 0.7rem 1rem;

@@ -4,6 +4,7 @@
     <div class="container">
       <router-link to="/">&larr; Home</router-link>
       <h2>Uh oh, It seems this page hasn't been completely assembled yet..</h2>
+      <h2>I'm probably off writing an article or building something super cool.. 🌚</h2>
       <img src="../assets/images/construction.svg" alt="illustration of construction workers" />
 
       <h3>
@@ -38,6 +39,9 @@ a,
 a:active,
 a:visited {
   color: var(--font-light);
+}
+.container {
+  margin-bottom: 100px;
 }
 img {
   margin-top: 3rem;
