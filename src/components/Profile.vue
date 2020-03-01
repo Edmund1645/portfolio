@@ -1,7 +1,7 @@
 <template>
   <section>
     <div id="profile-img">
-      <img src="https://res.cloudinary.com/kiing/image/upload/v1575509048/IMG_8692_1_sg2vlj.jpg" alt="profile-photo" />
+      <img src="https://res.cloudinary.com/kiing/image/upload/e_grayscale,q_auto:good/v1575509048/IMG_8692_1_sg2vlj.jpg" alt="profile-photo" />
     </div>
     <div class="green-dot"></div>
     <div id="profile-text">
@@ -44,6 +44,7 @@ section {
 }
 #profile-img {
   margin-right: 10px;
+  min-height: 300px;
 }
 #profile-text {
   height: auto;
