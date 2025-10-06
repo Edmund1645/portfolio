@@ -10,19 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
     <style>
 
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: #2b2c2e;
-          color: #f0efed;
-        }
-      }
-      
+
+
       body {
         font-family: 'Work Sans', sans-serif;
         background-color: #f0efed;
         color: #2b2c2e;
         padding: 8px;
+        margin: 0;
         border: 3px solid #9e1b42;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #2b2c2e;
+          color: #f0efed;
+        }
       }
 
       main {
@@ -34,6 +37,7 @@
       a:active,
       a:hover,
       a:visited {
+        color: currentColor;
         transition: all .3s;
         text-decoration: #9e1b42 wavy underline;
       }
@@ -41,6 +45,7 @@
       a:hover {
         opacity: 0.78;
         transition: all .3s;
+        text-decoration-style: solid;
       }
 
       .signature-container {
@@ -115,12 +120,12 @@
         <li>Heroku / Vercel / Netlify / GCP / Azure</li>
       </ul>
       <br />
-      
+
       <h3>Currently Learning 🧠</h3>
       <ul>
         <li>Java & Spring Framework</li>
       </ul>
-      
+
       <br />
       <br />
 
