@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edmund Ekott | Software Developer</title>
-    <meta name="description" content="Edmund is Frontend Engineer dedicated to building fast, intuitive and scalable products on the web." />
+    <meta name="description" content="Edmund is Software Developer dedicated to building fast, intuitive and scalable products on the web." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
     <style>
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #2b2c2e;
+          color: #f0efed;
+        }
+      }
+      
       body {
         font-family: 'Work Sans', sans-serif;
         background-color: #f0efed;
         color: #2b2c2e;
         padding: 8px;
+        border: 3px solid #9e1b42;
       }
 
       main {
@@ -25,13 +34,13 @@
       a:active,
       a:hover,
       a:visited {
-        color: #9e1b42;
-        transition: opacity .3s;
+        transition: all .3s;
+        text-decoration: #9e1b42 wavy underline;
       }
 
       a:hover {
         opacity: 0.78;
-        transition: opacity .3s;
+        transition: all .3s;
       }
 
       .signature-container {
@@ -93,25 +102,29 @@
       <br />
       <br />
 
-      <h3>Skills</h3>
+      <h3>Skills & Tools 🛠️</h3>
       <ul>
-        <li>HTML / CSS</li>
+        <li>HTML / CSS / SCSS / Tailwind</li>
         <li>JavaScript / TypeScript</li>
-        <li>TailwindCSS / SCSS</li>
-        <li>Vue.js / Nuxt.js / Gridsome</li>
-        <li>React.js / React Native/ Next.js</li>
-        <li>Unit / E2E Tests</li>
-        <li>Storybook</li>
-        <li>CI / CD</li>
-        <li>Node</li>
-        <li>Express.js</li>
-        <li>MongoDB</li>
-        <li>Heroku / Vercel / Netlify / GCP</li>
+        <li>Vue.js / Nuxt.js / Gridsome (Pinia, Vite)</li>
+        <li>React.js / Next.js / React Native (React Query, Zustand, Shadcn)</li>
+        <li>Unit / E2E Tests (Vitest, Jest, Cypress)</li>
+        <li>CI / CD (Github Actions, Azure Pipelines)</li>
+        <li>Node (Express.js)</li>
+        <li>MongoDB / PostgreSQL</li>
+        <li>Heroku / Vercel / Netlify / GCP / Azure</li>
       </ul>
+      <br />
+      
+      <h3>Currently Learning 🧠</h3>
+      <ul>
+        <li>Java & Spring Framework</li>
+      </ul>
+      
       <br />
       <br />
 
-      <h3>Writing</h3>
+      <h3>Writing ✍️</h3>
       <p>I try to write about technologies I find interesting.</p>
       <ul>
         <li><a href="https://blog.timfon.dev" target="_blank">My personal blog</a></li>
@@ -122,7 +135,7 @@
       <br />
       <br />
 
-      <h3>Contact</h3>
+      <h3>Contact 📧</h3>
       <p>
         Shoot me an
         <a href="mailto:hey@timfon.dev?subject=Hello&body=Hello Edmund, Hope this meets you well. Are you currently free for ...?" target="_blank">email</a>
